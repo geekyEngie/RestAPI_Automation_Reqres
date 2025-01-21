@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Test Suite">
+    <!-- Listeners for logging and test results -->
+    <listeners>
+        <listener class-name="org.example.listeners.TestListeners"/>
+    </listeners>
+
+    <test name="User Test Cases" parallel="methods" thread-count="4">
+    <classes>
+            <!-- Specify the test class you want to run -->
+            <class name="org.example.testcases.UserTest"/>
+        </classes>
+    </test>
+</suite>

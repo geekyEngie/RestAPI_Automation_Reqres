@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  my-reqrestest:
+    image: my-reqrestest-container
+    ports:
+      - "8080:8080"

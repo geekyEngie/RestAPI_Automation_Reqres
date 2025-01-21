@@ -1,0 +1,63 @@
+22:19:51.129 [main] INFO  org.testng.ITestListener - Test Suite StartedtestcreateUser
+22:19:51.134 [main] INFO  org.testng.ITestListener - Description !
+22:19:55.154 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully ! testcreateUser
+22:19:55.156 [main] INFO  org.testng.ITestListener - Test Suite StartedtestgetAllUsers
+22:19:55.156 [main] INFO  org.testng.ITestListener - Description !
+22:19:56.15 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully ! testgetAllUsers
+22:19:56.18 [main] INFO  org.testng.ITestListener - Test Suite StartedtestgetUsers
+22:19:56.18 [main] INFO  org.testng.ITestListener - Description !
+22:19:57.400 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully ! testgetUsers
+22:22:24.709 [main] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+22:22:24.712 [main] INFO  org.testng.ITestListener - Description! 
+22:22:28.547 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+22:22:28.549 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+22:22:28.549 [main] INFO  org.testng.ITestListener - Description! 
+22:22:29.415 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
+22:22:29.416 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+22:22:29.417 [main] INFO  org.testng.ITestListener - Description! 
+22:22:30.836 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+22:25:58.963 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+22:25:58.968 [main] INFO  org.testng.ITestListener - Description! 
+22:26:02.489 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+22:26:02.492 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+22:26:02.493 [main] INFO  org.testng.ITestListener - Description! 
+22:26:03.816 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
+22:26:03.818 [main] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+22:26:03.818 [main] INFO  org.testng.ITestListener - Description! 
+22:26:04.777 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+23:21:53.994 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+23:21:54.02 [main] INFO  org.testng.ITestListener - Description! 
+23:21:58.60 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+23:21:58.64 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+23:21:58.64 [main] INFO  org.testng.ITestListener - Description! 
+23:21:58.848 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
+23:21:58.849 [main] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+23:21:58.850 [main] INFO  org.testng.ITestListener - Description! 
+23:21:59.801 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+23:24:01.251 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+23:24:01.256 [main] INFO  org.testng.ITestListener - Description! 
+23:24:04.599 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+23:24:04.603 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+23:24:04.604 [main] INFO  org.testng.ITestListener - Description! 
+23:24:05.648 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
+23:24:05.649 [main] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+23:24:05.649 [main] INFO  org.testng.ITestListener - Description! 
+23:24:06.731 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+23:27:30.276 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+23:27:30.279 [main] INFO  org.testng.ITestListener - Description! 
+23:27:33.971 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+23:27:33.975 [main] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+23:27:33.975 [main] INFO  org.testng.ITestListener - Description! 
+23:27:35.193 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
+23:27:35.195 [main] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+23:27:35.195 [main] INFO  org.testng.ITestListener - Description! 
+23:27:36.321 [main] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+23:32:58.909 [TestNG-test-User Test Cases-2] INFO  org.testng.ITestListener - Test Suite Started.. testgetAllUsers
+23:32:58.909 [TestNG-test-User Test Cases-1] INFO  org.testng.ITestListener - Test Suite Started.. testgetUsers
+23:32:58.913 [TestNG-test-User Test Cases-2] INFO  org.testng.ITestListener - Description! 
+23:32:58.907 [TestNG-test-User Test Cases-3] INFO  org.testng.ITestListener - Test Suite Started.. testcreateUser
+23:32:58.916 [TestNG-test-User Test Cases-3] INFO  org.testng.ITestListener - Description! 
+23:32:58.914 [TestNG-test-User Test Cases-1] INFO  org.testng.ITestListener - Description! 
+23:33:03.465 [TestNG-test-User Test Cases-3] INFO  org.testng.ITestListener - Test cases are passed Successfully! testcreateUser
+23:33:03.466 [TestNG-test-User Test Cases-1] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetUsers
+23:33:03.528 [TestNG-test-User Test Cases-2] INFO  org.testng.ITestListener - Test cases are passed Successfully! testgetAllUsers
