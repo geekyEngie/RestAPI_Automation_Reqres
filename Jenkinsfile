@@ -1,51 +1,56 @@
 pipeline {
-    agent {
-        docker {
-            image 'my-reqrestest-container'
-            args '-p 8080:8080'
-        }
-    }
+    agent any
+
     environment {
-        DOCKER_IMAGE = 'my-reqrestest-container'
+        DOCKER_IMAGE = 'reqres-test-image' // Replace with your Docker image name
+        DOCKER_TAG = 'latest' // Tag for the Docker image
     }
+
     stages {
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'mvn clean install'
+                    echo 'Building Docker image...'
+                    docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}")
                 }
             }
         }
-        stage('Test') {
+
+        stage('Run Tests') {
             steps {
                 script {
-                    retry(3) {
-                        sh 'mvn test'
+                    echo 'Running tests inside the Docker container...'
+                    retry(3) { // Retry up to 3 times on failure
+                        docker.image("${DOCKER_IMAGE}:${DOCKER_TAG}").inside('-p 8080:8080') {
+                            sh 'mvn test'
+                        }
                     }
                 }
             }
         }
-        stage('Docker Build and Push') {
+
+        stage('Clean Up') {
             steps {
                 script {
-                    docker.build("${DOCKER_IMAGE}")
-                }
-            }
-        }
-        stage('Deploy') {
-            steps {
-                script {
-                    docker.image("${DOCKER_IMAGE}").run("-p 8080:8080")
+                    echo 'Cleaning up dangling Docker containers and images...'
+                    sh '''
+                        docker ps -a --filter "status=exited" --quiet | xargs -r docker rm
+                        docker images --filter "dangling=true" --quiet | xargs -r docker rmi
+                    '''
                 }
             }
         }
     }
+
     post {
         success {
-            echo 'Pipeline executed successfully.'
+            echo 'Pipeline executed successfully!'
         }
         failure {
-            echo 'Pipeline failed. Check the build logs.'
+            echo 'Pipeline failed. Please check the logs for details.'
+        }
+        always {
+            cleanWs() // Clean workspace to avoid clutter
         }
     }
 }
